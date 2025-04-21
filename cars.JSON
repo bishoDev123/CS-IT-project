@@ -1,0 +1,10 @@
+{
+    "cars": [
+        {
+            "name": "Nissan GTR",
+            "price": 30000,
+            "imagePath": "path/to/image.jpg",
+            "description": "Description of the car"
+        }
+    ]
+}

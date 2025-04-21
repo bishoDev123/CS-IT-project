@@ -1,9 +1,9 @@
 {
     "cars": [
         {
-            "name": "Nissan GTR",
+            "name": "Nissan GTR r35",
             "price": 30000,
-            "imagePath": "path/to/image.jpg",
+            "image": "../images/r35.jpg",
             "description": "Description of the car"
         }
     ]

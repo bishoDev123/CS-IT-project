@@ -11,7 +11,11 @@ fetch("../cars.JSON")
       cars
         .map(
           (car) => `
-            <option value="${car.name}">${car.name} - ${new Intl.NumberFormat(
+            <option 
+            value="${car.name}"
+            price="${car.price}"
+            image="${car.image}">
+            ${car.name} - ${new Intl.NumberFormat(
             "en-US",
             {
               style: "currency",
@@ -21,14 +25,35 @@ fetch("../cars.JSON")
         `
         )
         .join("");
+
     selects.forEach((select) => {
-        select.innerHTML = optionsHTML;
+      select.innerHTML = optionsHTML;
+      select.addEventListener("change", (event) => {
+        change(event);
+      });
     });
   })
   .catch((error) => {
-    //console fall safe display
-    console.error("Error loading JSON:", error);
-    //visual display
-    document.body.innerHTML +=
-      "<p>Failed to load car data. Please try again later.</p>";
+    handleError(error);
   });
+
+function handleError(error) {
+  console.error("Error loading JSON:", error);
+  document.body.innerHTML +=
+    "<p>Failed to load car data. Please try again later.</p>";
+}
+
+function change(event) {
+  const container = event.target.closest("#container");
+
+  if (container) {
+    //stores the selected value in a variable via accessing the options and using the index of the option selected
+    const selectedOption = event.target.options[event.target.selectedIndex];
+    
+    const carName = selectedOption.value;
+    const carPrice = selectedOption.getAttribute("price");
+    const carImage = selectedOption.getAttribute("image");
+
+    console.log(`your car is ${carName} priced at ${carPrice} with its image sored at ${carImage}`);
+  }
+}

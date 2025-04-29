@@ -5,6 +5,30 @@
             "price": 30000,
             "image": "../images/r35.jpg",
             "description": "Description of the car"
+        },
+        {
+            "name": "Toyota Supra MK4",
+            "price": 40000,
+            "image": "../images/supra.jpg",
+            "description": "Description of the car"
+        },
+        {
+            "name": "Chevrolet Camaro ZL1",
+            "price": 35000,
+            "image": "../images/camaro.jpg",
+            "description": "Description of the car"
+        },
+        {
+            "name": "Ford Mustang GT",
+            "price": 32000,
+            "image": "../images/mustang.jpg",
+            "description": "Description of the car"
+        },
+        {
+            "name": "BMW M3 E46",
+            "price": 28000,
+            "image": "../images/m3.jpg",
+            "description": "Description of the car"
         }
     ]
 }

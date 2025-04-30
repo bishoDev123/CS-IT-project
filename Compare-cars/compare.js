@@ -14,14 +14,9 @@ fetch("../cars.JSON")
             <option 
             value="${car.name}"
             price="${car.price}"
+            description="${car.description}"
             image="${car.image}">
-            ${car.name} - ${new Intl.NumberFormat(
-            "en-US",
-            {
-              style: "currency",
-              currency: "USD",
-            }
-          ).format(car.price)}</option>
+            ${car.name} - ${formatPrice(car.price)}</option>
         `
         )
         .join("");
@@ -49,11 +44,26 @@ function change(event) {
   if (container) {
     //stores the selected value in a variable via accessing the options and using the index of the option selected
     const selectedOption = event.target.options[event.target.selectedIndex];
-    
+
     const carName = selectedOption.value;
     const carPrice = selectedOption.getAttribute("price");
-    const carImage = selectedOption.getAttribute("image");
+    const imageURL = selectedOption.getAttribute("image");
+    const carDescription = selectedOption.getAttribute("description");
 
-    console.log(`your car is ${carName} priced at ${carPrice} with its image sored at ${carImage}`);
+    container.innerHTML = `
+    <div class="image-wrapper">
+      <img src="${imageURL}" alt="${carName}">
+    </div>
+    <h1>${carName}</h1>
+    <h3>Price: ${formatPrice(carPrice)}</h3>
+    <p>${carDescription}</p>
+    `;
   }
+}
+
+function formatPrice(price) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+  }).format(price);
 }

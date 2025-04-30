@@ -1,34 +1,34 @@
 {
     "cars": [
         {
-            "name": "Nissan GTR r35",
+            "name": "Nissan GTR R35",
             "price": 30000,
             "image": "../images/r35.jpg",
-            "description": "Description of the car"
+            "description": "A modern legend in the world of performance, the Nissan GTR R35 delivers mind-blowing acceleration with its twin-turbo V6 and advanced AWD system. Known as 'Godzilla,' it combines raw power with cutting-edge tech and track-ready precision."
         },
         {
             "name": "Toyota Supra MK4",
             "price": 40000,
             "image": "../images/supra.jpg",
-            "description": "Description of the car"
+            "description": "The Toyota Supra MK4 is an iconic Japanese sports car, revered for its 2JZ-GTE engine and legendary tuning potential. With sleek curves and a reputation built by enthusiasts and pop culture alike, it's a dream car for collectors and speed junkies."
         },
         {
             "name": "Chevrolet Camaro ZL1",
             "price": 35000,
             "image": "../images/camaro.jpg",
-            "description": "Description of the car"
+            "description": "Packing a supercharged V8 and aggressive styling, the Camaro ZL1 is an American muscle car beast. It delivers blistering speed, track-ready handling, and that unmistakable roar that turns heads on every street."
         },
         {
             "name": "Ford Mustang GT",
             "price": 32000,
             "image": "../images/mustang.jpg",
-            "description": "Description of the car"
+            "description": "The Ford Mustang GT is a timeless muscle car icon, offering classic V8 power with modern performance upgrades. With bold looks and a deep growl, it's built for those who crave an authentic driving experience."
         },
         {
             "name": "BMW M3 E46",
             "price": 28000,
             "image": "../images/m3.jpg",
-            "description": "Description of the car"
+            "description": "The BMW M3 E46 blends refined German engineering with track-capable performance. Its naturally aspirated inline-6, rear-wheel drive, and sharp handling make it a favorite among driving purists and enthusiasts worldwide."
         }
     ]
 }

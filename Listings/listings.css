@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("https://sdmntprpolandcentral.oaiusercontent.com/files/00000000-04cc-620a-83e5-becd3faa9d6a/raw?se=2025-05-03T17%3A33%3A42Z&sp=r&sv=2024-08-04&sr=b&scid=e2ed0df3-9a37-5796-a32a-5d6594a9b128&skoid=54ae6e2b-352e-4235-bc96-afa2512cc978&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-03T04%3A14%3A44Z&ske=2025-05-04T04%3A14%3A44Z&sks=b&skv=2024-08-04&sig=62yV7/Dv4p2qsDzEWtLMcFLow3XF0ZR4wxE3CbWuXTo%3D") ;
+    background-image: url("Listing-background.png") ;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
@@ -45,7 +45,7 @@ body {
 .container div:hover {
     background-color: rgba(255, 255, 255, 0.478);
     transition: background-color 0.3s ease;
-    color: rgb(191, 43, 14);
+    color: #0B0B9D;
 }
 .container div:hover img {
     transform: scale(1.05);

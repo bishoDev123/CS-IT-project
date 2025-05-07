@@ -38,6 +38,7 @@ form.addEventListener("submit", function (e) {
     }
     else {
         alert("logged in successfully.")
+        window.location.href = "../Home/home.html"
     }
     form.reset();
 })

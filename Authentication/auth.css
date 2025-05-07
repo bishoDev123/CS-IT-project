@@ -14,7 +14,10 @@ body {
     background-size: cover;
     background-position: center;
     margin: 0 14px;
+    background: url('logcar.jpg') no-repeat center center/cover, #021739;
 }
+
+
 
 .container {
     width: 750px;

@@ -7,51 +7,19 @@
     <link rel="stylesheet" href="listings.css">
 </head>
 <body>
-    <header>Header</header>
-    <div class="container">
-        <div>
-            
-            <img src="https://images.ctfassets.net/wowgx05xsdrr/6gtEL0wxsdHmpyTwRQtFhO/3db9cab584ee628d7f234a71c16b0c36/Article_Header_Racecar.jpg?fm=webp&w=3840&q=75" alt="">
-            <h2>Car name</h2>
-            <p>car price</p>
-            
-        </div>
-        <div>
-            
-            <img src="https://images.ctfassets.net/wowgx05xsdrr/6gtEL0wxsdHmpyTwRQtFhO/3db9cab584ee628d7f234a71c16b0c36/Article_Header_Racecar.jpg?fm=webp&w=3840&q=75" alt="">
-            <h2>Car name</h2>
-            <p>car price</p>
-            
-        </div>
-        <div>
-            
-            <img src="https://images.ctfassets.net/wowgx05xsdrr/6gtEL0wxsdHmpyTwRQtFhO/3db9cab584ee628d7f234a71c16b0c36/Article_Header_Racecar.jpg?fm=webp&w=3840&q=75" alt="">
-            <h2>Car name</h2>
-            <p>car price</p>
-            
-        </div>
-        <div>
-            
-            <img src="https://www.pngkit.com/png/detail/801-8017420_your-car-you-car-image-placeholder-png.png" alt="">
-            <h2>Car name</h2>
-            <p>car price</p>
-
-        </div>
-        <div>
-            
-            <img src="https://www.pngkit.com/png/detail/801-8017420_your-car-you-car-image-placeholder-png.png" alt="">
-            <h2>Car name</h2>
-            <p>car price</p>
-
-        </div>
-        <div>
-            
-            <img src="https://www.pngkit.com/png/detail/801-8017420_your-car-you-car-image-placeholder-png.png" alt="">
-            <h2>Car name</h2>
-            <p>car price</p>
-
-        </div>
+    <div class="search-bar">
+        <span><img src="search-icon.png" alt="icon"></span>
+        <input type="search" id="search" placeholder="Search for a car...">
     </div>
+    <div class="carContainer"></div>
+    <template data-car-template>
+        <div class="carCard">   
+            <img class="carImage" src="" alt="">
+            <h2 class="carName" ></h2>
+            <p>car price: </p>
+            <span class="carPrice"></span>
+        </div> 
+    </template>
     <script src="listings.js"></script>
 </body>
 </html>

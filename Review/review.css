@@ -1,0 +1,98 @@
+
+body{
+   font-size: 20px;
+   background-color:rgb(252, 236, 231);
+}
+form{
+   background-color: white;
+   color: rgb(0, 0, 0);
+   text-align:center;
+   padding: 15px;
+   border: solid ;
+   border-color: rgb(243, 138, 99);
+   min-width: 600px;
+   max-height: 480px;
+   margin-left: 10px;
+   border-radius: 10px;
+   margin-top: 100px;
+   margin-left: auto;
+   
+}
+input{
+   display: block;
+   margin: auto;
+   min-height: 200px;
+   width: 500px;
+   border-radius: 10px;
+   font-size: medium;
+   margin-top: 10px;
+}
+label{
+   font-weight: bolder;
+   font-size: larger;
+}
+.review{
+   height: 100px;
+}
+.box{
+   text-align: center;
+}
+.submit {
+   font-size: large;
+   width: 80px;
+   height: 30px;
+   margin: 0 auto;
+   margin-top: 30px;
+   margin-bottom: 20px;
+   background-color:rgb(249, 116, 59);
+   border-radius: 5px;
+   border-color: rgb(207, 113, 36);
+   
+}
+.stars i{
+   font-size: 30px;
+   color: rgb(179, 196, 180);
+   cursor: pointer;
+   transition: color 0.2s ease;
+}
+.stars i.active{
+   color: gold;
+}
+.thank-you{
+   display:none;
+   margin-top:20px; 
+   color:rgb(24, 168, 24);
+   font-weight: bold;
+}
+.reviews{
+   border: solid ;
+   border-color: rgb(243, 138, 99);
+   border-radius: 5px;
+   height: 200px;
+   width: 400px;
+   margin-left: 5px;
+   background-color: white;
+   margin: 20px;
+   padding: 5px;
+   margin-left: auto;
+   margin-right: auto;
+}
+.boxes{
+   margin: 20px;
+   background-color: rgb(252, 236, 231);
+   margin-left: auto;
+   margin-right: auto;
+   padding: 5px;
+}
+.reviews h3{
+   text-align: center;
+   color: orangered;
+}
+.title{
+   text-align: center;
+   font-size: xx-large;
+}
+.all{
+   display: flex;
+}
+

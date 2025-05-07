@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+*{
+    margin:0;
+    padding:0;
+    border: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    transition: 0.7s ease;
+    
+
+}
+.dark{
+    background-color: #000;
+}
+a{
+    color: #000;
+}
+.dark a{
+    color: white;
+}
+
+header{
+    background-color:rgba(255, 255, 255, 0.699);
+    width: 100%;
+    height: 5em;
+    position:fixed;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    padding:1em 1.5em ;
+    border-bottom:0.05em rgba(0, 0, 0, 0.377) solid ;
+}
+.dark header{
+    background-color: #000;
+}
+
+header .logo{
+    padding: 0 1em;
+}
+
+header .logo #MOTOR{
+    font-size:2em;
+    font-weight: 200;
+}
+
+header .logo #NEST{
+    vertical-align: super;
+    font-size: 1em;
+    font-weight:100 ;
+    color: blue;
+
+}
+
+.navigation a{
+   display: inline-block;
+    padding: 0 0.9em;
+   font-size: 1.2em;
+   font-weight: 100;
+   
+}
+.navigation a:hover{
+    color: blue;
+    transform: scale(1.1);
+}
+.icons a{
+    display: inline-block;
+    padding:0 0.5em ;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.568);
+}
+.dark .icons a{
+    color: white;
+}
+.dark #dark:hover{ color: yellow;}
+.icons a:hover{
+    color: #000;
+    transform: scale(1.2);
+}
+.dark .icons a:hover{
+    color:blue;
+}
+section{
+    padding:10em 3em;
+}
+.main{
+   display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   line-height: 3em;
+   width: 100%;
+   min-height: 100vh;
+   background: linear-gradient(rgba(255, 255, 255, 0.3)), url(../images/homeimage/background.jpeg) no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   opacity: 0.8;
+   }
+.dark .main{
+    background: linear-gradient(rgba(255, 255, 255, 0.3)), url(../images/homeimage/dark.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+   
+}
+.main h1{
+    margin: 1em 0;
+    font-size: 5em;
+    color: blue;
+    }
+
+.main p{
+    font-size:2em ;
+    font-weight: 300;
+    margin-top: 2em;
+    color: rgb(0, 0, 0);
+}
+.dark .main p{
+    color: white;
+}
+.main #Browsebutton{
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 250;
+    margin:2.5em 0 1.5em;
+    padding: 0.5em 1em;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1em;
+    border-radius: 0.7em;
+    outline:0.05em solid black;
+    background-color:rgb(255, 255, 255) ;
+}
+.dark .main #Browsebutton{
+    color: white;
+    background-color: #000;
+}
+.main #Browsebutton:hover{
+    color: white;
+    background-color: black;
+    transform:scale(1.05);
+}
+.dark .main #Browsebutton:hover{
+    color: #000;
+    background-color: white;
+}
+.main .icons-social a{
+    display: inline-block;
+    padding:0 1em ;
+    margin: 1em 0;
+    font-size: 2.5em;
+    color: rgba(0, 0, 0, 0.671);
+}
+#insta:hover{
+    color: rgba(231, 64, 34, 0.774);
+    transform: scale(1.2);
+}
+#face:hover{
+    color: blue;
+    transform: scale(1.2);
+}
+#gmail:hover{
+    color: red;
+    transform: scale(1.2);
+}
+
+#Recommended h1 {
+    display: flex;
+    color: blue;
+    font-size: 3em;
+    font-weight: 200;
+    justify-content: center;
+    text-decoration: underline black;
+    margin-bottom: 2em;
+}
+.dark #Recommended h1{
+    text-decoration: underline white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 0;
+}
+.card{
+    text-align: center;
+    height:28em;
+    width: 21em;
+    overflow: hidden;
+    border-radius:0.8em ;
+    outline:0.1em solid black;
+    margin-right: 2em;
+    box-shadow:0 0.4em 0.95em grey ;
+    }
+    .card:hover{
+        transform: scale(1.1);
+    }
+.imag{margin-bottom: 1em;}
+.imag a img{width: 100%;}
+.card .info h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+.dark .card .info h2{
+    color: white;
+}
+.card .info .year{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: rgba(6, 10, 248, 0.911);
+    margin-bottom: 0.5em;
+}
+.card .info .price{
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0.2em;
+}
+.dark .card .info .price{
+    color: white;
+}
+.card .det-btn{
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: 250;
+    padding: 1em 1em;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1em;
+    border-radius: 0.7em;
+    outline:0.05em solid black;
+    background-color:rgb(255, 255, 255);
+    transition: 1s ease;
+    }
+
+
+.card .det-btn:hover{
+    color: white;
+    background-color: #000;
+    text-transform: uppercase;
+    transform: scale(1.1);
+}
+.dark .card .det-btn:hover{
+    outline:0.05em solid rgb(255, 255, 255);
+}
+.data{
+    display: flex;
+    margin:0 13em 3em;
+    padding:0 1em ;
+   font-size: 1.6em;
+   font-weight: 100;
+   justify-content: space-between;
+}
+.data a:hover{
+    text-decoration:underline ;
+    color: blue;
+    transform: scale(1.1);
+}
+footer .conect{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+footer .conect .logo{
+    margin-left: 1em;
+}
+
+footer .conect .logo #MOTOR{
+    font-size:3em;
+    font-weight: 200;
+}
+
+footer .conect .logo #NEST{
+    vertical-align: super;
+    font-size: 1.2em;
+    font-weight:100 ;
+    color: blue;
+}
+footer .conect .logo #copy-right{
+    position: relative;
+    top: -1em;
+    margin-left: 0.3em;
+    vertical-align: super;
+    font-size: 1.1em;
+}
+
+.icons-foot a{
+    display: inline-block;
+    font-size: 2em;
+    margin-left: 1em;
+    color: rgba(0, 0, 0, 0.671);
+}
+.dark .icons-foot a{
+    color: white;
+}
+footer .conect #Policy{
+    margin-right: 2em;
+    margin-top:1em ;
+}
+footer .conect #Policy a {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 200;
+    margin-left: 1em;
+    letter-spacing: 0.05em;
+}
+
+footer .conect #Policy a:hover{
+    color: blue;
+}

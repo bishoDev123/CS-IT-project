@@ -9,15 +9,15 @@
 <body>
     <div class="search-bar">
         <span><img src="search-icon.png" alt="icon"></span>
-        <input type="search" id="search" placeholder="Search for a car...">
+        <input data-search type="search" id="search" placeholder="Search for a car...">
     </div>
-    <div class="carContainer"></div>
+    <div cars-container class="container"></div>
     <template data-car-template>
-        <div class="carCard">   
-            <img class="carImage" src="" alt="">
-            <h2 class="carName" ></h2>
+        <div id="car-card" class="carCard">   
+            <img data-image src="" alt="">
+            <h2 data-name ></h2>
             <p>car price: </p>
-            <span class="carPrice"></span>
+            <span data-price ></span>
         </div> 
     </template>
     <script src="listings.js"></script>

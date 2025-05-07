@@ -34,7 +34,7 @@ form.addEventListener("submit", function (e) {
             return;
         }
         alert("Registered successfully.")
-        return;
+        window.location.href = "../Home/home.html"
     }
     else {
         alert("logged in successfully.")

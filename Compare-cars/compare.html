@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="compare.css" />
   </head>
   <body>
-    <div id="test"></div>
+    <section class="selection-wrapper">
+      <div class="card" id="container">
+        <select name="car" id="selectedCar">
+        </select>
+      </div>
+      <div class="card" id="container">
+        <select name="car" id="selectedCar">
+        </select>
+      </div>
+    </section>
+    <div class="reset-wrapper">
+      <button onclick="location.reload()">Reset</button>
+    </div>
     <script src="compare.js"></script>
   </body>
 </html>

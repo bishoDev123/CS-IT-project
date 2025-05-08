@@ -4,51 +4,119 @@
     <meta charset="UTF-8">
     <title>Review page</title>
     <link rel="stylesheet" href="review.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     <link rel="stylesheet" href="review.js">
     
 </head>
 <body>
-    <div class="all">
-        <form id="reviewForm">
-        <h1>Tell us your opinion</h1>
-        <div class="stars">
-            <i class='bx bxs-star' ></i>
-            <i class='bx bxs-star' ></i>
-            <i class='bx bxs-star' ></i>
-            <i class='bx bxs-star' ></i>
-            <i class='bx bxs-star' ></i>  
-        </div>
-       
-        <div class="box">
-            
-            <input type="text" placeholder="your opinion..." class="review">
-            <button type="submit" class="submit">submit</button>
-            
-        </div>
+    <div class="slide-container">
+        <div class="slide-content">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                    
+                        <div class="card-image">
+                            <img src="photos/pexels-aminnaderloei-31977069.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
 
-        <div class="thank-you" id="thankYou">Successful sending , thank you for your opinion ! </div>
+                    <div class="card-cotent">
+                        <h2 class="name">David</h2>
+                        <p class="short-coment">Arabyat is easy to use and offers a wide range of new and used cars.</p>
+                        <p class="extra-text" > I bought my car through the site, and it was an excellent experience</p>
+                        <button class="button" onclick="showMore(event)">View More</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                    
+                        <div class="card-image">
+                            <img src="photos/pexels-hamed-gharaee-1120343-2117283.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
 
-    </form>
-    
-    <div class="boxes">
-        <h2 class="title">what our customers say </h2>
-        <div class="reviews">
-            <h3>Emily Johnson</h3>
-            <p>The car selection was fantastic! I found exactly what I was looking for in just a few minutes</p>
+                    <div class="card-cotent">
+                        <h2 class="name">Khalid</h2>
+
+                        <p class="short-coment">I liked the variety of listings and how quickly I could contact sellers.</p>
+                        <p class="extra-text">I liked the variety of listings and how quickly I could contact sellers. The site is reliable and provides detailed information to help make the right choice</p>
+                        <button class="button" onclick="showMore(event)">View More</button>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                    
+                        <div class="card-image">
+                            <img src="photos/pexels-heitorverdifotos-2169434.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-cotent">
+                        <h2 class="name">Laila</h2>
+                        <p class="short-coment">One of the best platforms for cars.</p>
+                        <p class="extra-text">One of the best platforms for cars. I was able to sell my vehicle within a few days, and the process was very smooth</p>
+                        <button class="button" onclick="showMore(event)">View More</button>
+                    </div>
+                    
+                </div>
+                <div class="card" id="extra-text">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                    
+                        <div class="card-image">
+                            <img src="photos/pexels-italo-melo-881954-2379005.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-cotent">
+                        <h2 class="name">Abdullah</h2>
+                        <p class="short-coment">I found exactly the car I was looking for at a great price and in excellent condition through Arabyat.</p>
+                        <p class="extra-text">I found exactly the car I was looking for at a great price and in excellent condition through Arabyat. The site truly offers trusted options</p>
+                        <button class="button" onclick="showMore(event)">View More</button>
+                    </div>
+                    
+                </div>
+                <div class="card" id="extra-text">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                    
+                        <div class="card-image">
+                            <img src="photos/pexels-justin-shaifer-501272-1222271.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-cotent">
+                        <h2 class="name">Sami</h2>
+                        <p class="short-coment"> I loved the simple design and how I could filter by price and features. </p>
+                        <p class="extra-text"> I loved the simple design and how I could filter by price and features. A great experience—I’ll definitely use it again</p>
+                        <button class="button" onclick="showMore(event)">View More</button>
+                    </div>
+                    
+                </div>
+                <div class="card" id="extra-text">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                    
+                        <div class="card-image">
+                            <img src="photos/pexels-olly-733872.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-cotent">
+                        <h2 class="name">Noura</h2>
+                        <p class="short-coment">Customer service was very helpful and responded quickly to my inquiries.</p>
+                        <p class="extra-text">Customer service was very helpful and responded quickly to my inquiries. I recommend Arabyat to anyone looking for a car</p>
+                        <button class="button" onclick="showMore(event)">View More</button>
+                    </div>
+                     
+                </div>
+            </div>                 
         </div>
-        <div class="reviews">
-            <h3>Michael Smith</h3>
-            <p>Great experience! The vehicle details were clear and the booking process was very smooth</p>
-        </div>
-        <div class="reviews">
-            <h3>Sarah Williams</h3>
-            <p>Customer service was top-notch. They answered all my questions and helped me choose the perfect car</p>
-        </div>
-       
     </div>
-</div>
     
     <script src="review.js"></script>
 </body>

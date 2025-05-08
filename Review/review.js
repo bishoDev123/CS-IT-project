@@ -1,30 +1,13 @@
+function showMore(event) {
+    const button = event.target;
+    const reviewBox = button.closest(".card");
+    const extraText = reviewBox.querySelector(".extra-text");
 
-
-const stars = document.querySelectorAll(".stars i");
-
-stars.forEach((star,index1)=>{
-
-    star.addEventListener("click",()=>{
-
-        stars.forEach((star,index2)=>{
-
-            index1 >= index2 ? star.classList.add("active"): star.classList.remove("active");
-
-        })
-
-   })
-
-})
-
-function resetStars() {
-    stars.forEach(star => star.classList.remove('active'));
-    rating = 0;  
-  }
-
-document.getElementById('reviewForm').addEventListener('submit',function(e) {
-    e.preventDefault();
-    document.getElementById('thankYou').style.display='block';
-    this.reset();
-    resetStars();
-    reviewInput.value = '';
-  });  
+    if (extraText.style.display === "none" || extraText.style.display === "") {
+        extraText.style.display = "block";
+        button.textContent = "Read Less";
+    } else {
+        extraText.style.display = "none";
+        button.textContent = "Read More";
+    }
+}

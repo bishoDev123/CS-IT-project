@@ -37,7 +37,7 @@ b{
     font-size: 15px;
 }
 h2{
-    color: rgb(255, 123, 0);
+    color: rgb(0, 89, 255);
     margin: 12px;
 }
 .content-section.title{
@@ -45,7 +45,7 @@ h2{
 }
 .content-section .content h3{
     margin-top: 20px;
-    color: #cf6711;
+    color: #116dcf;
     font-size: 21px;
 }
 .content-section .content p{
@@ -66,14 +66,14 @@ h2{
     letter-spacing: 1.5px;
 }
 .content-section .content .button a:hover{
-    background-color: #a52a2a;
+    background-color: #2a3fa5;
     color: #fff;
 }
 .content-section .social{
     margin: 40px 40px;
 }
 .content-section .social i{
-    color: #a52a2a;
+    color: #2a4ba5;
     font-size: 30px;
     padding: 0px 10px;
 }

@@ -5,10 +5,24 @@
 
 body {
     font-family: 'figtree';
+    background-image: url("whitecar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
+        z-index: -1;
+    }
 }
 
 button {
-    background-color: #ff7a00;
+    background-color: #0048e4;
     color: #fff;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -21,7 +35,7 @@ button {
 }
 
 button:hover {
-    background-color: #e66b00;
+    background-color: #0077e6;
     transform: translateY(-2px);
 }
 
@@ -42,7 +56,7 @@ div p {
 .card {
     margin: auto;
     width: 50%;
-    border: 2px solid rgb(255, 157, 0);
+    border: 2px solid rgb(0, 110, 255);
     border-radius: 10px;
     padding: 10px;
 
@@ -60,7 +74,7 @@ div p {
     margin: auto;
     border-radius: 10px;
     border-style: solid;
-    border-color: orange;
+    border-color: rgb(0, 89, 255);
 }
 
 .image-wrapper img {

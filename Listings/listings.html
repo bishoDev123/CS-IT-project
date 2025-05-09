@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="listings.css">
 </head>
 <body>
+    <div class="search-bar">
+        <span><img src="search-icon.png" alt=""></span>
+        <input data-search type="search" id="search" placeholder="Search for a car...">
+    </div>
+    <div cars-container class="container"></div>
+    <template data-car-template>
+        <a id="car-card" class="carCard">   
+            <img data-image src="" alt="">
+            <h2 data-name ></h2>
+            <p>car price: </p>
+            <span data-price ></span>
+        </a> 
+    </template>
     <script src="listings.js"></script>
 </body>
 </html>

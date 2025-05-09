@@ -5,6 +5,7 @@ let Cars = [];
 
 searchInput.addEventListener("input", (e) => {
     const Value = e.target.value.toLowerCase();
+
     Cars.forEach(car => {    
         const isVisable = car.name.toLowerCase().includes(Value)
         car.element.classList.toggle("hide", !isVisable);

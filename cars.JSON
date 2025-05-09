@@ -29,6 +29,18 @@
             "price": 28000,
             "image": "../images/m3.jpg",
             "description": "The BMW M3 E46 blends refined German engineering with track-capable performance. Its naturally aspirated inline-6, rear-wheel drive, and sharp handling make it a favorite among driving purists and enthusiasts worldwide."
+        },
+        {
+            "name": "Audi A8",
+            "price": 37000,
+            "image": "../images/homeimage/2023 audi a8.jpeg",
+            "description": "The Audi A8 is a full-size luxury sedan that blends cutting-edge technology with refined elegance. It features a sleek, understated design with a spacious, high-tech interior. Under the hood, it offers powerful engine options, including V6, V8, and plug-in hybrid variants. Quattro all-wheel drive ensures confident handling in all conditions. As Audi’s flagship, the A8 emphasizes comfort, innovation, and executive-class prestige."
+        },
+        {
+            "name": "BMW 7 series",
+            "price": 56000,
+            "image": "../images/homeimage/2023 BMW 7.jpeg",
+            "description": "The BMW 7 Series represents the pinnacle of luxury and innovation in the executive sedan segment. With its opulent interior, advanced technology, and powerful engine options, it delivers a driving experience that is both dynamic and serene. The 7 Series combines cutting-edge features like gesture control and semi-autonomous driving with timeless design and unparalleled comfort, making it a top choice for those who demand the best."
         }
     ]
 }

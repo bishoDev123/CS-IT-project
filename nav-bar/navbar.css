@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+* {
+    transition: 0.7s ease;
+
+}
+
+body {
+    margin-top: 7em;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+header {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: rgba(255, 255, 255, 0.699);
+    width: 100%;
+    height: 5em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between; /* Ensures proper spacing between logo, navigation, and icons */
+    align-items: center;
+    padding: 1em 1.5em; /* Adds padding inside the header */
+    border-bottom: 0.05em rgba(0, 0, 0, 0.377) solid;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    overflow: hidden; /* Prevents content from overflowing */
+}
+
+header .logo{
+    padding: 0 1em;
+}
+
+header .logo #MOTOR{
+    font-size:2em;
+    font-weight: 200;
+}
+
+header .logo #NEST{
+    vertical-align: super;
+    font-size: 1em;
+    font-weight:100 ;
+    color: blue;
+
+}
+
+.navigation a{
+   display: inline-block;
+    padding: 0 0.9em;
+   font-size: 1.2em;
+   font-weight: 100;
+   
+}
+.navigation a:hover{
+    color: blue;
+    transform: scale(1.1);
+}
+
+.icons {
+    display: flex; /* Align icons horizontally */
+    gap: 0.5em; /* Adds spacing between icons */
+    margin-right: 0; /* Remove the margin that causes overflow */
+    padding-right: 50px;
+}
+
+.icons a{
+    display: inline-block;
+    padding:0 0.5em ;
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.568);
+}
+
+.icons a:hover{
+    color:blue;
+    transform: scale(1.2);
+}

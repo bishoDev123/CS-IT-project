@@ -3,14 +3,13 @@ const carsContainer = document.querySelector("[cars-container]");
 const searchInput = document.querySelector("[data-search]");
 let Cars = [];
 
-// searchInput.addEventListener("input", (e) => {
-//     const value = e.target.value.toLowerCase();
-//     Cars.forEach(car => {
-//         const isVisible = car.name.toLowerCase().includes(value) || car.price.toLowerCase().includes(value);
-//         car.element.classList.toggle("hide", !isVisible);
-//     });
-// });
-
+searchInput.addEventListener("input", (e) => {
+    const Value = e.target.value.toLowerCase();
+    Cars.forEach(car => {    
+        const isVisable = car.name.toLowerCase().includes(Value)
+        car.element.classList.toggle("hide", !isVisable);
+});
+})
 fetch("../cars.JSON")
     .then((response) => response.json())
     .then(data => {

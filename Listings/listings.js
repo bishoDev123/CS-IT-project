@@ -23,6 +23,12 @@ fetch("../cars.JSON")
             carImage.src = car.image; 
             carName.textContent = car.name;
             carPrice.textContent = car.price;
+
+            card.addEventListener("click", () => {
+                localStorage.setItem("selectedCar", JSON.stringify(car));
+                window.location.href = "../Car-details/details.html";
+            })
+
             carsContainer.append(card);  
             return { name: car.name, price: car.price, image: car.image, element: card };                                  
         });
